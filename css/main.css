@@ -1,0 +1,447 @@
+/*Prevents iphone from resizing in landscape mode*/
+html {-webkit-text-size-adjust: none;}
+
+/*Apply a natural box layout model to all elements*/
+* {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+
+/*-----MAIN BODY STYLES-----*/
+body{
+	font-size: 16px;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 300; /*also loaded 600 for bold*/
+	background-color: #4E3D36;
+	/*background-image: url(../images/dirt.jpg);*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.container{
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 1140px;
+}
+#bgImg{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	position: fixed;
+}
+
+/*-----HEADER STYLES-----*/
+/*header {
+	font-weight: 600;
+	width: 100%;
+	margin: 30px 0 10px 4%;
+}
+header h1{
+	font-size: 2em;
+}
+header h2{
+	font-size: 20px;
+	padding-top: 10px;
+}*/
+
+/*----------NAV STYLE----------*/
+nav{
+	background-color: white;
+	padding: 10px 0;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	box-shadow: 0 0 20px black;
+}
+.navWrap{
+	margin: 0 auto;
+	max-width: 1140px;
+}
+nav h1{
+	display: inline-block;
+	font-family: 'Lobster', cursive;
+	font-size: 3em;
+	color: #CC6933;
+}
+nav ul{
+	display: inline-block;
+	float: right;
+	margin-top: 26px;
+}
+nav ul li{
+	display: inline-block;
+	margin-left: 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	font-size: 1.2em;
+	color: rgba(0,0,0,0.6);
+}
+nav ul li a:hover{
+	color: #CC6933;
+}
+.adminNav{
+	font-size: .9em;
+}
+.adminNav a{
+	font-size: .9em;
+}
+
+/*---------CONTENT--------*/
+.welcome h1{
+	font-family: 'Lobster', cursive;
+	font-size: 8em;
+	text-align: center;
+	color: white;
+	text-shadow: 0 0 30px black;
+	margin:120px 0 80px;
+}
+.content{
+	background-color: white;
+	border-radius: 5px;
+	margin: 130px 0 20px;
+	padding: 20px 2%;
+	box-shadow: 0 0 20px black;
+}
+.content h1{
+	font-size: 2em;
+	font-family: 'Lobster', cursive;
+	margin-bottom: 20px;
+	color: #CC6933;
+}
+fieldset{
+	margin: 20px 0;
+}
+label{
+	display: block;
+	margin: 5px 2%;
+}
+label p{
+	display: inline-block;
+}
+input{
+	display: inline-block;
+	margin-left: 5px;
+}
+.submitBtn{
+	border: 1px solid #CC6933;
+	border-radius: 5px;
+	background-color: #CC6933;
+	color: rgba(255,255,255,0.8);
+	font-family: 'Comfortaa', cursive;
+	padding: 5px 10px;
+	font-size: 1.1em;
+	margin-left: 200px;
+}
+.submitBtn:hover{
+	box-shadow: 0 0 2px black;
+	color: rgba(255,255,255,1);
+}
+
+/*INVENTORY PAGE*/
+.w33{
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+.w33 h3{
+	font-size: 1.2em;
+	color: rgba(0,0,0,0.7);
+}
+.invRow{
+	border-top: 1px solid rgba(0,0,0,0.3);
+	margin: 15px;
+	padding: 15px 0;
+}
+.invRow h2{
+	font-size: 1.2em;
+}
+.lastRow{
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.updateLink{
+	color: rgba(0,0,0,0.7);
+	font-size: 1.1em;
+}
+.updateLink:hover{
+	color: #CC6933;
+}
+.deleteLink{
+	margin-left: 20px;
+	color: rgba(0,0,0,0.7);
+	font-size: 1.1em;
+}
+.deleteLink:hover{
+	color: red;
+}
+
+/*---CARD---*/
+.card{
+	background-color: white;
+	width: 48%;	
+	padding:10px;
+	border-radius: 5px;
+	float: left;
+	margin: 10px 1%;
+	box-shadow: 0 0 10px black;
+	transition: 0.6s;
+	height: 200px;
+}
+.card:hover{
+	box-shadow: 0 0 40px black;
+	cursor: pointer;
+}
+.expand:hover{
+	cursor: auto;
+}
+.card:hover h1{
+	color: #CC6933;
+}
+.cardLeft{
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+.cardRight{
+	width: 50%;	
+	float: left;
+	height: 100%;
+}
+.card img{
+	width: 100%;
+	margin: 20% 0;
+}
+.card h1{
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.card h2{
+	font-size: 1.4em;
+	margin: 110px 40px 10px 0;
+	float: right;
+}
+.card p{
+	margin: 50px 0 0 50px;
+}
+.card button{
+	border: 1px solid #CC6933;
+	border-radius: 5px;
+	background-color: #CC6933;
+	color: rgba(255,255,255,0.8);
+	font-family: 'Comfortaa', cursive;
+	padding: 5px 10px;
+	font-size: 1.1em;
+	float: right;
+	margin-top: 335px;
+}
+.card button:hover{
+	box-shadow: 0 0 2px black;
+	color: rgba(255,255,255,1);
+}
+.expand{
+	width: 100%;
+	box-shadow: 0 0 40px black;
+	height: auto;
+}
+.expand h1{
+	color: #CC6933;
+}
+.expand img{
+	/*margin: 80px 0;*/
+}
+.toggle{
+	display: none;
+}
+.show{
+	display: block;
+}
+.closeX{
+	float: right;
+	cursor: pointer;
+	color: rgba(0,0,0,0.8);
+	margin-top: -40px;
+	font-size: 1.2em;
+}
+.closeX:hover{
+	color: #CC6933;
+}
+.minBtn{
+	border: none;
+	background-color: transparent;
+	font-size: 1.7em;
+	margin: -1.7em 0;
+	color: red;
+}
+.minBtn:hover{
+	text-shadow: 1px 1px 1px black;
+}
+.plusBtn{
+	border: none;
+	background-color: transparent;
+	font-size: 1.4em;
+	margin: -1.4em 0;
+	color: green;
+}
+.plusBtn:hover{
+	text-shadow: 1px 1px 1px black;	
+}
+.qtyInd{
+	display:inline-block;
+	margin: 0 5px;
+}
+.totalField{
+	width: 33.33%;
+	float: right;
+	clear: both;
+}
+.totalPrice{
+	text-align: center;
+	font-size: 1.6em;
+	margin-top: 20px;
+	display: inline-block;
+	margin-left: 40%;
+}
+.smallTxt{
+	font-size: .8em;
+	display: inline-block;
+	margin-left: 5px;
+	color: rgba(0,0,0,0.7);
+}
+.checkoutField{
+	width: 33.33%;
+	clear: both;
+	float: right;
+	text-align: center;
+}
+.checkoutBtn{
+	margin-top: 15px;
+
+}
+.checkoutBtn{
+	margin-top: 15px;
+	border: 1px solid #CC6933;
+	border-radius: 5px;
+	background-color: #CC6933;
+	color: rgba(255,255,255,0.8);
+	font-family: 'Comfortaa', cursive;
+	padding: 5px 10px;
+	font-size: 1.1em;
+}
+.checkoutBtn:hover{
+	box-shadow: 0 0 2px black;
+	color: rgba(255,255,255,1);
+}
+fieldset{
+	/*margin: 30px auto;*/
+	text-align: center;
+}
+legend{
+	font-size: 1.5em;
+	text-align: center;
+	margin: 20px 0;
+	text-decoration: underline;
+}
+.formRow label{
+	display: inline-block;
+}
+.totalnbuy{
+	width: 50%;
+	margin: 0 25%;
+}
+.checkTotal{
+	width: 45%;
+	margin-right: 9%;	
+	display: inline-block;
+}
+.pLeft{
+	text-align: right;
+	display: inline-block;
+	width: 70%;
+}
+.pRight{
+	text-align: right;
+	display: inline-block;
+	width: 30%;
+}
+.finalTotal{
+	font-size: 1.3em;
+}
+.checkTotal hr{
+	margin-left: 40%;
+}
+.purchase{
+	width: 44%;
+	display: inline-block;
+}
+.conh2{
+	font-size: 1.4em;
+	margin: 10px 0;
+}
+.addShip{
+	text-align: center;
+	margin-top: 10px;
+}
+
+/*---------ORDERS-------------*/
+.customerRow{
+	border-top: 1px solid rgba(0,0,0,0.7);
+	padding: 5px 0;
+}
+.h{
+	margin-left: -4px;
+	color: #CC6933;
+}
+.order{
+	display: inline-block;
+}
+.Name{
+	width: 12%;
+}
+.Address{
+	width: 30%;
+}
+.Email{
+	width: 20%;
+}
+.Joined{
+	width: 15%;
+	vertical-align: top;
+}
+.LauncherId{
+	width: 50%;
+}
+.LauncherQuantity{
+	width: 50%;
+}
+.Total{
+	width: 12%;
+}
+.Fulfilled{
+	width: 7%;
+}
+.b{
+	font-size: .9em;
+}
+.check{
+	width: 3%;
+}
+
+/*------------FOOTER-------------*/
+footer{
+	text-align: center;
+	color: white;
+	clear: both;
+	padding: 50px 0 20px;
+}
+footer a{
+	color: white;
+	margin-left: 3px;
+}
+footer a:hover{
+	color: #CC6933;
+}
+
+/*OTHER*/
+.keepOpen{
+	clear: both;
+}
